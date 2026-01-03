@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Gil Rattan – Persönliche Website</title>
+<meta name="description" content="Gil Rattan – Minimalistische, elegante Online-Präsenz mit interaktivem Hintergrund. Entdecke Gil Rattan online.">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #000000; /* Start schwarz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease-in-out; /* sanfter Übergang */
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0.5em 0;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- H1 für SEO und sichtbar -->
+<h1>Gil Rattan</h1>
+
+<script>
+  let isBlack = true;
+
+  document.body.addEventListener("pointerdown", () => {
+    document.body.style.background = isBlack ? "#5DADE2" : "#000000";
+    isBlack = !isBlack;
+  });
+</script>
+
+</body>
+</html>
